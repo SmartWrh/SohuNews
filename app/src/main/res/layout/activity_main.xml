@@ -1,0 +1,130 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="topnews.inhome.wrh.fragment.NewsFragment">
+
+    <HorizontalScrollView
+        android:id="@+id/horizon"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        >
+        <com.wrh.sohunews.ViewpagerIndicator
+            android:id="@+id/indicator"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:text="首页"
+                android:textColor="@color/red"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text="订阅"
+                android:layout_margin="10dp"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text="娱乐"
+                android:layout_margin="10dp"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:text="本地"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:text="生活"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_margin="10dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text="军事"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_margin="10dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text="财经"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_margin="10dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text="社会"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_margin="10dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text="汽车"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_margin="10dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text="体育"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_margin="10dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text="历史"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_margin="10dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text="搞笑"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_margin="10dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text="情感"
+                android:gravity="center" />
+        </com.wrh.sohunews.ViewpagerIndicator>
+    </HorizontalScrollView>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/horizon"
+
+        />
+</RelativeLayout>
